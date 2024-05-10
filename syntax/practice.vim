@@ -143,6 +143,7 @@ syn match practiceCommentCharacter contained "'[^\\]'"
 "syn match practiceCommentStar contained "^\s*\*[^/]"me=e-1
 "syn match practiceCommentStar contained "^\s*\*$"
 syn match practiceLineComment ";.*" contains=practiceComment2String,practiceCommentCharacter,practiceNumber,practiceTodo
+syn match practiceLineComment "\/\/.*" contains=practiceComment2String,practiceCommentCharacter,practiceNumber,practiceTodo
 hi link practiceLineComment practiceComment
 hi link practiceCommentString practiceString
 hi link practiceComment2String practiceString
